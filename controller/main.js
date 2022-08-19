@@ -71,13 +71,11 @@ function layThongTinNV(isAdd) {
     );
 
   // Kiểm tra rỗng #datepicker
-  isValid &=
-    validation.kiemTraRong(ngayLam, "tbNgay", "(*) Vui lòng nhập ngày làm") &&
-    validation.kiemTraNgay(
-      ngayLam,
-      "tbNgay",
-      "(*) Vui lòng nhập đúng định dạng ngày"
-    );
+  isValid &= validation.kiemTraRong(
+    ngayLam,
+    "tbNgay",
+    "(*) Vui lòng nhập ngày làm"
+  );
 
   // Kiểm tra rỗng #luongCB
   isValid &=
@@ -103,10 +101,10 @@ function layThongTinNV(isAdd) {
 
   // Kiểm tra rỗng #gioLam
   isValid &=
-    validation.kiemTraRong(gioLam, "tbGiolam", "(*) Vui lòng nhập giờ làm") &&
+    validation.kiemTraRong(gioLam, "tbGioLam", "(*) Vui lòng nhập giờ làm") &&
     validation.kiemTraGioLam(
       gioLam,
-      "tbGiolam",
+      "tbGioLam",
       "(*) Vui lòng nhập đúng số giờ quy định",
       80,
       200

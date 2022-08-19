@@ -48,17 +48,17 @@ function Validation() {
     return false;
   };
 
-  this.kiemTraNgay = function (value, errorID, message) {
-    var letter = +mm / dd / yyyy;
-    if (value.match(letter)) {
-      getEle(errorID).style.display = "none";
-      getEle(errorID).innerHTML = "";
-      return true;
-    }
-    getEle(errorID).style.display = "block";
-    getEle(errorID).innerHTML = message;
-    return false;
-  };
+  // this.kiemTraNgay = function (value, errorID, message) {
+  //   var letter = +mm / dd / yyyy;
+  //   if (value.match(letter)) {
+  //     getEle(errorID).style.display = "none";
+  //     getEle(errorID).innerHTML = "";
+  //     return true;
+  //   }
+  //   getEle(errorID).style.display = "block";
+  //   getEle(errorID).innerHTML = message;
+  //   return false;
+  // };
 
   this.kiemTraLuongCB = function (value, errorID, message, min, max) {
     if (value >= min && value <= max) {
