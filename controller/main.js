@@ -209,6 +209,7 @@ getEle("searchName").addEventListener("keyup", function () {
   renderTable(mangTimKiem);
 });
 
+// Lưu dữ liệu về local storage
 function setLocalStorage() {
   // Convert JSON => String
   var dataString = JSON.stringify(dsnv.arr);
@@ -216,6 +217,7 @@ function setLocalStorage() {
   localStorage.setItem("DanhSachNhanVien", dataString);
 }
 
+// Lấy dữ liệu từ local storage
 function getLocalStorage() {
   if (localStorage.getItem("DanhSachNhanVien")) {
     var dataString = localStorage.getItem("DanhSachNhanVien");
